@@ -1,19 +1,10 @@
 /* hero background image */
 .bgimage {
   height: 100vh;
-  background: url("../images/heroImage.jpeg");
+  background: url("../images/heroImage.jpg");
   background-size: cover;
   position: relative;
 }
-
-.caption {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: #ffffff45;
-  font-size: 12px;
-}
-
 
 /* text css above hero image*/
 .hero_title {
@@ -99,7 +90,7 @@
 } */
 
 .card:hover {
-  border: 2px solid #000000;
+  border: 2px solid rgb(5, 44, 101);
 }
 
 .servicesText {
@@ -108,8 +99,8 @@
 }
 
 .servicesText:hover {
-  border: 2px solid #000000;
-  color: #000000;
+  border: 2px solid rgb(5, 44, 101);
+  color: rgb(5, 44, 101);
 }
 
 /* social media icons styling */
@@ -143,4 +134,9 @@
 
 #contact {
   padding-bottom: 4rem;
+}
+
+/* own colors  */
+.bg-dark-blue {
+  background-color: rgb(5, 44, 101);
 }

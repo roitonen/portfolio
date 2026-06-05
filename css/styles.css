@@ -6,13 +6,17 @@
   position: relative;
 }
 
-/* text css above hero image*/
+/* text css above hero image */
 .hero_title {
   font-size: 4.5rem;
 }
 
 .hero_desc {
   font-size: 2rem;
+  /* max-width: 900px; */
+  /* margin: 0 auto; */
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .hero-text {
@@ -24,10 +28,12 @@
   color: white;
 }
 
-
 /* about section image css */
 .imageAboutPage {
   width: 100%;
+  max-width: 320px;
+  display: block;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -59,10 +65,29 @@
   color: #0000007c;
 }
 
-/* services section css */
+/* skills cards */
 .servicesText.card {
-  height: 320px;
+  min-height: 235px;
+  height: auto;
   cursor: pointer;
+}
+
+#skills .card-body {
+  padding: 1.25rem;
+}
+
+#skills .servicesIcon {
+  font-size: 30px;
+}
+
+#skills .card-title {
+  font-size: 1.25rem;
+  margin-top: 1rem !important;
+}
+
+#skills .card-text {
+  font-size: 1rem;
+  line-height: 1.25;
 }
 
 .servicesIcon {
@@ -81,13 +106,8 @@
 }
 
 .portfolioContent {
-  min-height: 470px;
-  /* height: 550px; */
+  min-height: 430px;
 }
-
-/* .cardbody {
-  height: 215px;
-} */
 
 .card:hover {
   border: 2px solid rgb(5, 44, 101);
@@ -101,6 +121,12 @@
 .servicesText:hover {
   border: 2px solid rgb(5, 44, 101);
   color: rgb(5, 44, 101);
+}
+
+/* project images */
+#portfolio .card-img-top {
+  height: 220px;
+  object-fit: cover;
 }
 
 /* social media icons styling */
@@ -125,7 +151,8 @@
 
 /* spacing on all sections */
 #about,
-#services,
+#skills,
+#education,
 #portfolio,
 #contact {
   margin-top: 4rem;
@@ -136,7 +163,74 @@
   padding-bottom: 4rem;
 }
 
-/* own colors  */
+/* own colors */
 .bg-dark-blue {
   background-color: rgb(5, 44, 101);
+}
+
+/* tablet */
+@media (max-width: 1000px) {
+  .imageAboutPage {
+    max-width: 252px;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .hero_title {
+    font-size: 2.4rem;
+  }
+
+  .hero_desc {
+    font-size: 1rem;
+    max-width: 320px;
+  }
+
+  #skills .servicesText,
+  #portfolio .portfolioContent {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #skills .col-lg-4,
+  #portfolio .col-lg-4 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  #portfolio .card-img-top {
+    height: 190px;
+  }
+}
+
+/* small mobile */
+@media (max-width: 420px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .hero_title {
+    font-size: 2rem;
+  }
+
+  .hero_desc {
+    font-size: 0.95rem;
+    max-width: 300px;
+  }
+
+  .imageAboutPage {
+    max-width: 220px;
+  }
+
+  #skills .servicesText,
+  #portfolio .portfolioContent {
+    max-width: 320px;
+  }
+
+  #skills .col-lg-4,
+  #portfolio .col-lg-4 {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
